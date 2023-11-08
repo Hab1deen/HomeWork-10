@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form id="registrationForm" action="#" method="POST">
+    <fieldset>
+        <legend>Registration Form</legend>
+
+        <!-- First Name -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+        <span class="error" id="firstNameError"></span><br><br>
+
+        <!-- Last Name -->
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+        <span class="error" id="lastNameError"></span><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <span class="error" id="emailError"></span><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="8" required>
+        <span class="error" id="passwordError"></span><br><br>
+
+        <!-- Confirm Password -->
+        <label for "confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <span class="error" id="confirmPasswordError"></span><br><br>
+
+        <!-- Age -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0">
+        <span class="error" id="ageError"></span><br><br>
+
+        <!-- Gender -->
+        <p>Gender:</p>
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+        <span class="error" id="genderError"></span><br><br>
+
+        <!-- Terms and Conditions -->
+        <label>
+            <input type="checkbox" id="terms" name="terms" required>
+            I accept the Terms and Conditions
+        </label>
+        <span class="error" id="termsError"></span><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit" id="submitButton">Register</button>
+    </fieldset>
+
+    <!-- Include the JavaScript file at the bottom of the HTML file -->
+    <script src="script.js"></script>
+</form>
+
+</body>
+</html>
